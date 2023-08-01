@@ -1,11 +1,11 @@
-/* 
+/*
 Scope-Based Resource Management
 ================================
 
-Rust uses the end of scope as the place to deconstruct 
+Rust uses the end of scope as the place to deconstruct
 and deallocate a resource.
 
-The term for this deconstruction and deallocation is 
+The term for this deconstruction and deallocation is
 called a 'drop'.
 
 Memory detail:
@@ -13,7 +13,6 @@ Memory detail:
 - Rust does not have garbage collection.
 - This is also called Resource Acquisition Is Initialization ( RAII ) in C++.
  */
-
 
 struct Foo {
     x: i32,
@@ -27,8 +26,7 @@ fn main() {
 
     println!("{}", foo_b.x);
 
-
-    // End Of Scope: 
-    // foo_b is dropped here 
+    // End Of Scope:
+    // foo_b is dropped here
     // foo_a is dropped here
 }
