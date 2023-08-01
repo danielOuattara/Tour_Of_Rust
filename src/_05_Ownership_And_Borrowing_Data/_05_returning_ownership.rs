@@ -1,4 +1,4 @@
-/* 
+/*
 Returning Ownership
 =====================
 
@@ -21,8 +21,6 @@ fn main() {
 
     println!("{}", foo.x);
 
-    
     // End Of Scope
     // foo is dropped because of end of function scope
-
 }
